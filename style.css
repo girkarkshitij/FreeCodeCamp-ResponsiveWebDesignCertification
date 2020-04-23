@@ -1,5 +1,5 @@
-body{
-    background-color:#f6d743;
+body {
+    background-color: #f6d743;
     font-family: 'Noto Sans', sans-serif;
     line-height: 1.5em;
     text-align: center;
@@ -7,60 +7,80 @@ body{
     padding: 0;
 }
 
-h1{
+h1 {
     color: #06623b;
     font-size: 3;
     font-weight: bold;
 }
 
-h2{
+h2 {
     color: #649d66;
     font-size: 1em;
     font-weight: 100;
 }
 
-#main{
-    background-color:#f6d743;
+h3 {
+    color: #06623b;
+}
+#main {
+    background-color: #f6d743;
 }
 
-#image{
-    max-width: 50%;
+#image {
+    max-width: 40%;
     display: block;
     height: auto;
     margin: 10px auto;
 }
 
-#img-div{
-    background-color: #f6f578   ;
+#img-div {
+    background-color: #f6f578;
     padding: 20px;
     margin: 20px;
 }
 
-#img-caption{
+#img-caption {
     padding: 10px;
 }
 
-ul{
+ul {
     text-align: left;
     max-width: 60%;
     margin: 0 auto 50px auto;
+    list-style: none;
 }
 
-li{
+ul li::before {
+    content: '\2022';
+    color: #06623b;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+li {
     margin: 10px 0;
 }
 
-blockquote{
+blockquote {
+    background-color: #f6f578;
     font-style: italic;
     max-width: 70%;
     margin: 50px auto 50px auto;
+    padding: 10px;
     text-align: left;
+    box-shadow: 0 8px 6px -6px black;
 }
 
-a{
+a {
     color: #649d66;
 }
 
-a:hover{
+a:hover {
     color: rgb(2, 56, 2);
+}
+
+a:visited {
+    color: black;
 }
