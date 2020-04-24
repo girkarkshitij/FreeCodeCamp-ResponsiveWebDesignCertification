@@ -1,0 +1,13 @@
+body{
+    font-family: 'Muli', sans-serif;
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 50%;
+    margin: 5em auto 0 auto;
+    padding: 10em;
+    background-color: blueviolet;
+}
