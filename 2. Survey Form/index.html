@@ -14,10 +14,10 @@
     <body>
         <div class="container">
             <header class="header">
-                <h1 id="title">
+                <h1 id="title" class="text-center">
                     Competitive Programming Survey Form
                 </h1>
-                <p>
+                <p id="description" class="description text-center">
                     Thank you for taking the time to help us
                 </p>
             </header>
@@ -29,6 +29,7 @@
                         type="text"
                         name="name"
                         id="name"
+                        class="form-control"
                         placeholder="Enter your full name"
                         required
                     />
@@ -39,6 +40,7 @@
                         type="email"
                         name="email"
                         id="email"
+                        class="form-control"
                         placeholder="Enter your email"
                         required
                     />
@@ -51,14 +53,20 @@
                         type="number"
                         name="experience"
                         id="number"
+                        class="form-control"
                         min="0"
                         max="50"
-                        placeholder="Enter your competitive programming experience (in years)"
+                        placeholder="Experience (in years)"
                     />
                 </div>
                 <div class="form-group">
                     <label id="role-label" for="role">Your Current Role</label>
-                    <select id="dropdown" name="role" required>
+                    <select
+                        id="dropdown"
+                        name="role"
+                        class="form-control"
+                        required
+                    >
                         <option disabled selected value
                             >Select current role</option
                         >
@@ -77,6 +85,7 @@
                             name="feedback"
                             value="yes"
                             type="radio"
+                            class="input-radio"
                             checked
                         />
                         Yes
@@ -86,6 +95,7 @@
                             name="feedback"
                             value="no"
                             type="radio"
+                            class="input-radio"
                             checked
                         />
                         No
@@ -95,6 +105,7 @@
                             name="feedback"
                             value="not-sure"
                             type="radio"
+                            class="input-radio"
                             checked
                         />
                         Not Sure
@@ -102,26 +113,52 @@
                 </div>
                 <div class="form-group">
                     <p>
-                        Programming languages you know (Check all that apply)
+                        Programming languages you know
+                        <span class="clue">(Check all that apply)</span>
                     </p>
                     <label>
-                        <input name="check" value="c++" type="checkbox" />
+                        <input
+                            name="check"
+                            value="c++"
+                            type="checkbox"
+                            class="input-checkbox"
+                        />
                         C++
                     </label>
                     <label>
-                        <input name="check" value="java" type="checkbox" />
+                        <input
+                            name="check"
+                            value="java"
+                            type="checkbox"
+                            class="input-checkbox"
+                        />
                         Java
                     </label>
                     <label>
-                        <input name="check" value="python" type="checkbox" />
+                        <input
+                            name="check"
+                            value="python"
+                            type="checkbox"
+                            class="input-checkbox"
+                        />
                         Python
                     </label>
                     <label>
-                        <input name="check" value="perl" type="checkbox" />
+                        <input
+                            name="check"
+                            value="perl"
+                            type="checkbox"
+                            class="input-checkbox"
+                        />
                         Perl
                     </label>
                     <label>
-                        <input name="check" value="ruby" type="checkbox" />
+                        <input
+                            name="check"
+                            value="ruby"
+                            type="checkbox"
+                            class="input-checkbox"
+                        />
                         Ruby
                     </label>
                 </div>
@@ -129,7 +166,12 @@
                     <p>
                         Your favourite language for competitive programming
                     </p>
-                    <select id="primary-language" name="lang" required>
+                    <select
+                        id="primary-language"
+                        name="lang"
+                        class="form-control"
+                        required
+                    >
                         <option disabled selected value
                             >Select a language</option
                         >
@@ -141,11 +183,15 @@
                     </select>
                 </div>
                 <div class="form-group">
-                    <p>Tips for beginners</p>
-                    <textarea id="tips" name="tips"></textarea>
+                    <p>Any Comments</p>
+                    <textarea
+                        id="tips"
+                        name="tips"
+                        class="input-textarea"
+                    ></textarea>
                 </div>
                 <div class="form-group">
-                    <button type="submit" id="submit">
+                    <button type="submit" id="submit" class="submit-button">
                         Submit
                     </button>
                 </div>
