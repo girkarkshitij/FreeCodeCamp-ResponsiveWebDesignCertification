@@ -1,61 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>
-            Product Landing Page
-        </title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
+        <title>Product Landing Page</title>
     </head>
-    <body>
-        <div id="page-wrapper">
-            <header id="header">
-                <div class="logo">
-                    <img
-                        id="header-img"
-                        src="http://clipart-library.com/images_k/harry-potter-logo-transparent-background/harry-potter-logo-transparent-background-19.png"
-                        alt="Harry Potter Logo"
-                    />
-                </div>
 
+    <body>
+        <div class="wrapper">
+            <header id="header">
+                <!-- Navigation -->
                 <nav id="nav-bar">
                     <ul>
-                        <li>
-                            <a class="nav-link" href="#features">Features</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#how-it-works">How It Works</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#pricing">Pricing</a>
-                        </li>
+                        <li class="nav-link"></li>
+                        <li class="nav-link"></li>
+                        <li class="nav-link"></li>
+                        <li class="nav-link"></li>
                     </ul>
                 </nav>
+
+                <!-- Company Logo -->
+                <img src="" alt="Company Logo" />
             </header>
-            <div class="container">
 
-            </div>
-
-            <section id="hero">
-                <h1>Handcrafted, home-made brooms</h1>
-                <form id="form" action="https://www.freecodecamp.com/email-submit">
-                    <input type="email" name="email" id="email" placeholder="Enter your email address">
-                    <input type="submit" id="submit" value="yes" class="btn">
-                </form>
+            <!-- Showcase -->
+            <section class="showcase">
+                <div class="video"></div>
+                <div class="email-box">
+                    <form action="" id="form">
+                        <label for="email">
+                            <p>
+                                Subscribe to our newsletter
+                            </p>
+                        </label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email address"
+                        />
+                        <input
+                            type="submit"
+                            id="submit"
+                            name="submit"
+                            formaction="https://www.freecodecamp.com/email-submit"
+                            value="Submit"
+                        />
+                    </form>
+                </div>
             </section>
 
-            <div class="container">
-                <section id="features">
-                    <div class="grid">
-                        
-                    </div>
-                </section>
-            </div>
-            <video src="" id="video"></video>
+            <!-- Footer -->
+            <footer>
+                Product Landing Page &copy; 2020
+            </footer>
 
-            <form id="form">
-                <!-- email
-            submit -->
-            </form>
+            <!-- Wrapper ends here -->
         </div>
     </body>
 </html>
