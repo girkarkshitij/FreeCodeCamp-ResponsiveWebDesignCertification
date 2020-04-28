@@ -1,0 +1,48 @@
+:root {
+    --dark: #25274d;
+    --light: #aaabbb;
+    --medium: #2e9cca;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: var(--dark);
+    margin: 30px 50px;
+}
+
+#header {
+    position: fixed;
+    display: flex;
+    top: 0;
+    align-items: center;
+    justify-items: center;
+}
+
+#nav-bar > ul{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: space-around ;
+}
+
+li{
+    list-style: none;
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: var(--light);
+}
+
+.logo{
+    width: 25rem;
+    margin-left: auto;
+}

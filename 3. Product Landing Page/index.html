@@ -4,52 +4,86 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
         <title>Product Landing Page</title>
     </head>
 
     <body>
         <div class="wrapper">
             <header id="header">
-                <!-- Navigation -->
+            <!-- Navigation -->
                 <nav id="nav-bar">
                     <ul>
-                        <li class="nav-link"></li>
-                        <li class="nav-link"></li>
-                        <li class="nav-link"></li>
-                        <li class="nav-link"></li>
+                        <li class="nav-link">
+                            <a href="#features">Features</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#video">How It Works</a>
+                        </li>
+                        <li class="nav-link"><a href="#pricing">Pricing</a></li>
                     </ul>
                 </nav>
 
                 <!-- Company Logo -->
-                <img src="" alt="Company Logo" />
+                <img src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="Company Logo" class="logo" />
             </header>
 
-            <!-- Showcase -->
-            <section class="showcase">
-                <div class="video"></div>
-                <div class="email-box">
-                    <form action="" id="form">
-                        <label for="email">
-                            <p>
-                                Subscribe to our newsletter
-                            </p>
-                        </label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="Enter your email address"
-                        />
-                        <input
-                            type="submit"
-                            id="submit"
-                            name="submit"
-                            formaction="https://www.freecodecamp.com/email-submit"
-                            value="Submit"
-                        />
-                    </form>
+            <!-- Email Box -->
+            <section id="email-box">
+                <form action="https://www.freecodecamp.com/email-submit" id="form">
+                    <label for="email">
+                        <p>
+                            Subscribe to our newsletter
+                        </p>
+                    </label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email address"
+                    />
+                    <input
+                        type="submit"
+                        id="submit"
+                        name="submit"
+                        formaction=""
+                        value="Submit"
+                    />
+                </form>
+            </section>
+
+            <!-- Features -->
+            <section id="features">
+                <div class="box-a">
+                    <h3>Premium Materials</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, itaque?</p>
+                </div>
+                <div class="box-b">
+                    <h3>Fast Shipping</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, itaque?</p>
+                </div>
+                <div class="box-c">
+                    <h3>Quality Assurance</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, itaque?</p>
                 </div>
             </section>
+
+            <!-- Showcase -->
+            <div class="container">
+                <video id="video"></video>
+                <div id="pricing">
+                    <div class="box-1" >
+                        <h3>Membership</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h4>$500/month</h4>
+                    </div>
+                    <div class="box-2">
+                        <h3>Prime Membership</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h4>$800/month</h4>
+                    </div>
+                </div>
+            </div>
 
             <!-- Footer -->
             <footer>
@@ -57,6 +91,6 @@
             </footer>
 
             <!-- Wrapper ends here -->
-        </div>
+        </video>
     </body>
 </html>
