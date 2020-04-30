@@ -1,8 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
         <title>Product Landing Page</title>
@@ -25,7 +23,9 @@
                 </nav>
 
                 <!-- Company Logo -->
-                <img src="https://s3.amazonaws.com/freecodecamp/original_trombones.png" alt="Company Logo" class="logo" />
+                <div class="logo">
+                    <img src="https://pngimage.net/wp-content/uploads/2018/06/music-company-logos-png-2.png" alt="Company Logo"/>
+                </div>
             </header>
 
             <!-- Email Box -->
@@ -69,30 +69,37 @@
                 </div>
             </section>
 
-            <!-- Showcase -->
-            <div class="container">
+            <!-- Video -->
                 <iframe 
                 id="video"
-                height="315" 
+                height="315"
+                width="500"
                 src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
                 frameborder="0" 
                 allowfullscreen>
-            </iframe>
-                <div id="pricing">
-                    <div class="box-1" >
+                </iframe>
+
+            <!-- Container -->
+                <div class="container">
+                    <div class="dbox" >
                         <h3>Membership</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         <h4>$500/month</h4>
                         <button class="button">Select</button>
                     </div>
-                    <div class="box-2">
+                    <div class="dbox">
                         <h3>Prime Membership</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                         <h4>$800/month</h4>
                         <button class="button">Select</button>
                     </div>
+                    <div class="dbox">
+                        <h3>Super Membership</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <h4>$1500/month</h4>
+                        <button class="button">Select</button>
+                    </div>
                 </div>
-            </div>
 
             <!-- Footer -->
             <footer>
