@@ -52,7 +52,7 @@ span {
     color: var(--dark);
 }
 
-#navbar {
+nav {
     display: flex;
     justify-content: flex-end;
     position: fixed;
@@ -63,34 +63,34 @@ span {
 }
 
 @media(max-width: 850px){
-    #navbar{
-        font-size: 1rem;
-        background-color: red;
-        align-items: center;
+    nav{
+        font-size: 0.8rem;
+        /* background-color: red; */
     }
-    #navbar li{
-        background-color: yellow;
-        padding: 0;
-        margin: 0;
+    nav ul{
+        /* background: yellow; */
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
     }
 }
-#navbar ul {
+
+nav ul {
     display: flex;
     flex-direction: row;
     margin-right: 2rem;
 }
 
-#navbar li {
+nav li {
     list-style: none;
     padding: 0 2rem;
 }
 
-#navbar a {
-    display: block;
+nav a {
     text-decoration: none;
 }
 
-#navbar a:hover {
+nav a:hover {
     color: var(--light);
 }
 
@@ -134,12 +134,13 @@ img {
 #contact{
     background-color: var(--light);
     padding-top: 100px;
-    height: 80vh;
+    height: 100%;
 }
 
 .contact-section-header{
     text-align: center;
     padding: 30px;
+    padding-top: 50px;
 }
 
 .contact-section-header h2{
@@ -153,6 +154,14 @@ img {
     align-items: center;
     justify-content: center;
     gap: 30px;
+}
+
+@media(max-width: 850px){
+    .contact-container{
+        flex-direction: column;
+        height: 100%;
+
+    }
 }
 
 .contact-container .links{
